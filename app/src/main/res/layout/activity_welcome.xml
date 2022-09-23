@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Welcome">
+    tools:context=".Welcome"
+    android:background="@color/white">
 
     <ImageView
         android:id="@+id/imageView1"
@@ -17,7 +18,8 @@
         android:layout_marginTop="60dp"
         android:layout_marginEnd="60dp"
         android:layout_marginBottom="60dp"
-        app:srcCompat="@drawable/pk_logo" />
+        app:srcCompat="@drawable/pk_logo"
+        android:background="@color/white"/>
 
     <TextView
         android:id="@+id/textView"
