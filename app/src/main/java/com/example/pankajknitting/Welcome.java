@@ -13,7 +13,6 @@ private Button wlcbtn;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome);
-        getSupportActionBar().hide();
         wlcbtn= findViewById(R.id.wlcbtn);
         wlcbtn.setOnClickListener(new View.OnClickListener() {
             @Override

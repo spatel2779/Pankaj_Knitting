@@ -14,10 +14,15 @@
         android:theme="@style/Theme.PankajKnitting"
         tools:targetApi="31">
         <activity
+            android:name=".Otpverify"
+            android:exported="false" />
+        <activity
+            android:name=".Mobilesigin"
+            android:exported="false" />
+        <activity
             android:name=".Signin"
             android:exported="false"
-            android:screenOrientation="locked"
-            />
+            android:screenOrientation="locked" />
         <activity
             android:name=".Welcome"
             android:exported="true"
