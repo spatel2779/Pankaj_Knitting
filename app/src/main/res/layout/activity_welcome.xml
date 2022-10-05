@@ -21,10 +21,10 @@
         android:layout_centerHorizontal="true"
         android:layout_marginHorizontal="50sp"
         android:layout_marginBottom="180dp"
-        android:text="Welcome to Handicraft Galaxy"
+        android:text="Welcome to \nHandicraft Galaxy"
         android:textAlignment="center"
         android:textColor="#E54343"
-        android:textSize="34sp" />
+        android:textSize="30sp" />
 
     <TextView
         android:id="@+id/tv2"
@@ -37,15 +37,13 @@
         android:textSize="14sp" />
 
     <Button
-        android:id="@+id/get_started"
+        android:id="@+id/btnGetStarted"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
         android:layout_marginHorizontal="50sp"
         android:layout_marginBottom="70dp"
         android:backgroundTint="@color/purple_pk"
-        android:paddingVertical="15dp"
         android:text="Get Started"
         android:textColor="@color/white"
         android:textSize="18sp"

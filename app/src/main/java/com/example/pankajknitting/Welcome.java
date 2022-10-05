@@ -2,15 +2,30 @@ package com.example.pankajknitting;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+
+import com.example.pankajknitting.databinding.ActivityWelcomeBinding;
 
 public class Welcome extends AppCompatActivity {
+    ActivityWelcomeBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_welcome);
+        binding = ActivityWelcomeBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
         getSupportActionBar().hide();
-        //hbhjbhjbjhbjmb  kjkjlkj
+
+        //Set on Click Listener for button
+        binding.btnGetStarted.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Welcome.this, OrderAccepted.class));
+
+            }
+        });
+
     }
 }
