@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Pankaj Knitting</string>
+    <string name="signoptin">or sign in with google</string>
+    <string name="ggl_btn">Continue with google</string>
+    <string name="signtext">Get your handicraft’s item with Handicraft Galaxy</string>
 </resources>
