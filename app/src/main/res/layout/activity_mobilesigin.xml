@@ -7,26 +7,45 @@
     tools:context=".Mobilesigin"
     android:background="@color/white">
 
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="159dp"
+        android:text="Enter your mobile number"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        />
+
     <EditText
         android:id="@+id/editTextNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="238dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="225dp"
         android:ems="10"
-        android:hint="Enter Mobile"
-        android:inputType="number"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="287dp" />
+        android:inputType="phone"
+        android:text="+91 "
+        android:textColor="@color/black"/>
+
 
     <Button
         android:id="@+id/otpbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="321dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="306dp"
         android:text="Get OTP" />
+
+
 </RelativeLayout>
