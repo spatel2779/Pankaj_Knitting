@@ -3,8 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/sgaje/AndroidStudioProjects/PankajKnitting/app/src/main/res/drawable/button.xml" value="0.216" />
+        <entry key="..\:/Users/sgaje/AndroidStudioProjects/PankajKnitting/app/src/main/res/drawable/ic_google.xml" value="0.2185" />
+        <entry key="..\:/Users/sgaje/AndroidStudioProjects/PankajKnitting/app/src/main/res/layout/activity_home.xml" value="0.19067977768277042" />
         <entry key="..\:/Users/sgaje/AndroidStudioProjects/PankajKnitting/app/src/main/res/layout/activity_main.xml" value="0.19067977768277042" />
-        <entry key="..\:/Users/sgaje/AndroidStudioProjects/PankajKnitting/app/src/main/res/layout/activity_signin.xml" value="0.19067977768277042" />
+        <entry key="..\:/Users/sgaje/AndroidStudioProjects/PankajKnitting/app/src/main/res/layout/activity_mobilesigin.xml" value="0.1791363830696879" />
+        <entry key="..\:/Users/sgaje/AndroidStudioProjects/PankajKnitting/app/src/main/res/layout/activity_otpverify.xml" value="0.1791363830696879" />
+        <entry key="..\:/Users/sgaje/AndroidStudioProjects/PankajKnitting/app/src/main/res/layout/activity_signin.xml" value="0.2" />
         <entry key="..\:/Users/sgaje/AndroidStudioProjects/PankajKnitting/app/src/main/res/layout/activity_welcome.xml" value="0.19067977768277042" />
       </map>
     </option>

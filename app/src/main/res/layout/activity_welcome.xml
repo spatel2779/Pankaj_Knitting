@@ -7,6 +7,15 @@
     tools:context=".Welcome">
 
     <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="688dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="-110dp"
+        app:srcCompat="@drawable/motitoran1" />
+    <ImageView
         android:id="@+id/imageView1"
         android:layout_width="wrap_content"
         android:layout_height="300dp"
@@ -57,6 +66,8 @@
         android:textSize="18sp"
         app:cornerRadius="10dp"
         android:onClick="started"/>
+
+
 
 
 </RelativeLayout>
