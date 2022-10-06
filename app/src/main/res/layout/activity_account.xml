@@ -1,9 +1,158 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".Account">
+    android:id="@+id/account"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/profile_pic"
+        android:layout_width="60dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:src="@mipmap/ic_profile_pic_foreground"
+        app:srcCompat="@mipmap/ic_profile_pic_foreground"
+        tools:srcCompat="@mipmap/ic_profile_pic_foreground" />
+
+    <TextView
+        android:id="@+id/uName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:text="John Doe"
+        android:layout_toEndOf="@+id/profile_pic"
+        android:textColor="#181725"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/uEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="johndoe12@gmail.com"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="1dp"
+        android:layout_toEndOf="@+id/profile_pic"
+        android:layout_below="@+id/uName"
+        android:textColor="#7C7C7C"
+        android:textSize="16sp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tOrders"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:hintTextColor="#181725"
+        android:layout_marginHorizontal="10dp"
+        app:startIconDrawable="@drawable/ic_orders_24"
+        app:startIconTint="#181725"
+        android:layout_below="@+id/uEmail">
+
+        <com.google.android.material.textfield.MaterialAutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:drawableEnd="@drawable/ic_end_24"
+            android:textSize="18sp"
+            android:text="Orders"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tMyDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:hintTextColor="#181725"
+        android:layout_marginHorizontal="10dp"
+        app:startIconDrawable="@drawable/ic_my_details_24"
+        app:startIconTint="#181725"
+        android:layout_below="@+id/tOrders">
+
+        <com.google.android.material.textfield.MaterialAutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:drawableEnd="@drawable/ic_end_24"
+            android:text="My Details"
+            android:textSize="18sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tDeliveryAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:hintTextColor="#181725"
+        android:layout_marginHorizontal="10dp"
+        app:startIconDrawable="@drawable/ic_address_24"
+        app:startIconTint="#181725"
+        android:layout_below="@+id/tMyDetails">
+
+        <com.google.android.material.textfield.MaterialAutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:drawableEnd="@drawable/ic_end_24"
+            android:text="Delivery Address"
+            android:textSize="18sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tHelp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:hintTextColor="#181725"
+        android:layout_marginHorizontal="10dp"
+        app:startIconDrawable="@drawable/ic_help_24"
+        app:startIconTint="#181725"
+        android:layout_below="@+id/tDeliveryAddress">
+
+        <com.google.android.material.textfield.MaterialAutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:drawableEnd="@drawable/ic_end_24"
+            android:text="Help"
+            android:textSize="18sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tAbout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:hintTextColor="#181725"
+        android:layout_marginHorizontal="10dp"
+        app:startIconDrawable="@drawable/ic_about_24"
+        app:startIconTint="#181725"
+        android:layout_below="@+id/tHelp">
+
+        <com.google.android.material.textfield.MaterialAutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:drawableEnd="@drawable/ic_end_24"
+            android:text="About"
+            android:textSize="18sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/back_to_home"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="30sp"
+        android:layout_marginBottom="100dp"
+        android:backgroundTint="#F2F3F2"
+        android:drawableLeft="@drawable/ic_logout_24"
+        android:drawableTint="@color/purple_pk"
+        android:text=" Log Out    "
+        android:textColor="@color/purple_pk"
+        android:textSize="16sp"
+        app:cornerRadius="10dp" />
+
+</RelativeLayout>

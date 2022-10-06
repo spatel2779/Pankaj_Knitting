@@ -2,7 +2,9 @@ package com.example.pankajknitting;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import com.example.pankajknitting.databinding.ActivityAccountBinding;
 
@@ -16,5 +18,12 @@ ActivityAccountBinding binding;
         binding = ActivityAccountBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         Objects.requireNonNull(getSupportActionBar()).hide();
+
+        binding.tOrders.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Account.this, Welcome.class));
+            }
+        });
     }
 }
