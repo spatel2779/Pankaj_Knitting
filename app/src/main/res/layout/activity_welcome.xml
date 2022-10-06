@@ -4,30 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Welcome"
-    android:background="@color/white">
+    tools:context=".Welcome">
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="match_parent"
-        android:layout_height="688dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="-110dp"
-        app:srcCompat="@drawable/motitoran1" />
     <ImageView
         android:id="@+id/imageView1"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="300dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_centerInParent="true"
         android:layout_marginStart="60dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="240dp"
         android:layout_marginEnd="60dp"
         android:layout_marginBottom="60dp"
-        android:background="@color/white"
         app:srcCompat="@drawable/pk_logo" />
 
     <TextView
@@ -37,40 +26,37 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="180dp"
-        android:text="Welcome to \n Handicraft Galaxy"
+        android:text="Welcome to Handicraft Galaxy"
         android:textAlignment="center"
         android:textColor="#E54343"
-        android:textSize="34sp"
-        android:textStyle="bold" />
+        android:textSize="34sp" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="224dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+
         android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
         android:layout_marginBottom="150dp"
+
         android:text="Get your favourits at your doorstop"
-        android:textColor="@color/black"
         android:textSize="14sp" />
 
     <Button
-        android:id="@+id/wlcbtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginHorizontal="50sp"
         android:layout_marginBottom="70dp"
-        android:background="@drawable/button"
-        android:backgroundTint="@color/black"
+        android:backgroundTint="@color/purple_pk"
         android:paddingVertical="15dp"
         android:text="Get Started"
         android:textColor="@color/white"
         android:textSize="18sp"
-        app:cornerRadius="10dp" />
-
-
+        app:cornerRadius="10dp"
+        android:onClick="started"/>
 
 
 </RelativeLayout>
