@@ -45,7 +45,8 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="29dp"
         android:layout_marginTop="306dp"
-        android:text="Get OTP" />
+        android:text="Get OTP"
+        android:textColor="@color/white" />
 
 
 </RelativeLayout>
